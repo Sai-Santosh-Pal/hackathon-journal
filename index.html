@@ -6,22 +6,44 @@
     <title>sai's hackathon journal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contrast,font_download" />
 </head>
-<body class=" bg-black selection:text-black selection:bg-yellow-400 text-white p-7">
+<body id="body" class="bg-black inverted transition duration-100 ease-in serif selection:text-black selection:bg-yellow-400 text-white p-7">
     <div class="nav flex items-center justify-between">
         <div class="title">
             <div class="text-3xl">sai's hackathon journal</div>
             <div class="text-base italic">a journal for all the hackathons i have attended</div>
         </div>
         <div class="buttons flex gap-2">
-            <span class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
+            <span onclick="changeFont()" class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
                 font_download
             </span>
-            <span class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
+            <span onclick="changeTheme()" class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
                 contrast
             </span>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
+<style>
+    .inverted {
+        color: black;
+        background: white;
+    }
+    .serif {
+        font-family: 'Instrument Serif';
+    }
+    .geist-mono {
+        font-family: 'Geist Mono';
+    }
+    .vt323 {
+        font-family: 'VT323';
+    }
+    .geist{
+        font-family: 'Geist'
+    }
+</style>
 </html>
