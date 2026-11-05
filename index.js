@@ -1,9 +1,17 @@
 function changeTheme() {
     if (document.getElementById('body').classList.contains('inverted')) {
         document.getElementById('body').classList.remove('inverted')
+        document.querySelectorAll('.box').forEach(e => {
+            e.classList.replace('hover:bg-white/80', 'hover:bg-slate-900/90')
+        })
     }
     else {
         document.getElementById('body').classList.add('inverted')
+        document.querySelectorAll('.box').forEach(e => {
+            e.classList.add('hover:bg-white/80')
+            e.classList.remove('hover:bg-slate-900/80')
+        })
+
     }
 }
 
