@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapyard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contrast,font_download,arrow_back" />
+</head>
+<body id="body" class="bg-black flex justify-center items-center serif inverted transition duration-100 ease-in selection:text-black selection:bg-yellow-400 text-white p-7">
+    <div class="container w-screen h-screen md:max-w-[70%]">
+        <div class="nav flex items-center justify-between">
+        <div class="buttons  w-30 justify-center flex gap-2">
+            <span onclick="document.location.href = '/'" class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
+                arrow_back
+            </span>
+        </div>
+        <div class="title text-center">
+            <div class="text-4xl">Scrapyard Delhi</div>
+            <div class="text-base italic">Summer 2025</div>
+        </div>
+        <div class="buttons w-30 justify-center flex gap-2">
+            <span onclick="changeFont()" class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
+                font_download
+            </span>
+            <span onclick="changeTheme()" class="transition duration-100 ease-in cursor-pointer hover:bg-yellow-400 hover:text-black p-3 rounded-[200px] material-symbols-outlined">
+                contrast
+            </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+<style>
+    .inverted {
+        color: black;
+        background: white;
+    }
+    .serif {
+        font-family: 'Instrument Serif';
+    }
+    .geist-mono {
+        font-family: 'Geist Mono';
+    }
+    .vt323 {
+        font-family: 'VT323';
+    }
+    .geist{
+        font-family: 'Geist'
+    }
+</style>
+</html>
